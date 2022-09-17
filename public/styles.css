@@ -76,10 +76,33 @@ li {
   text-align: left;
   position: relative;
   padding: 0.5rem;
+  /* remove list dots */
+  list-style-type: none;
 }
 
  h5 {
   margin-top: 0;
   transform: rotate(1deg);
 
+}
+.fa-trash {
+padding-left: 3rem;  
+text-align: right;
+
+
+}
+.fa-trash:hover {
+color: rgb(179, 25, 25);
+}
+
+.fa-circle-check {
+  padding-left: 1rem;
+}
+
+.fa-circle-check:hover {
+color: rgb(24, 143, 24);
+}
+
+.DeleteAllButton{
+  margin-top: 7.5rem;
 }
