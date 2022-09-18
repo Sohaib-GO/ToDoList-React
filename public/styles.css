@@ -25,6 +25,7 @@ body {
   box-shadow: 4px 3px 7px 2px #00000040;
   padding: 1rem;
   box-sizing: border-box;
+  position:relative;
 }
 .heading {
   display: flex;
@@ -92,7 +93,7 @@ text-align: right;
 
 }
 .fa-trash:hover {
-color: rgb(179, 25, 25);
+color: hsl(0, 75%, 40%);
 }
 
 .fa-circle-check {
@@ -103,6 +104,23 @@ color: rgb(179, 25, 25);
 color: rgb(24, 143, 24);
 }
 
-.DeleteAllButton{
-  margin-top: 7.5rem;
+
+::placeholder {
+  color: rgb(143, 144, 134);
+  opacity: 3;
+  font-style:inherit
 }
+.DeleteAllButton{
+  margin-bottom: 15%;
+}
+
+
+.taskCount {
+  color: #7a7a7a;
+  font-size: 1rem;
+padding-top: 1rem;
+position:absolute;
+bottom: 0;
+left: 80px;
+}
+
