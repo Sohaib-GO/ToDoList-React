@@ -25,7 +25,7 @@ body {
   box-shadow: 4px 3px 7px 2px #00000040;
   padding: 1rem;
   box-sizing: border-box;
-  position:relative;
+  position: relative;
 }
 .heading {
   display: flex;
@@ -81,19 +81,16 @@ li {
   list-style-type: none;
 }
 
- h5 {
+h5 {
   margin-top: 0;
   transform: rotate(1deg);
-
 }
 .fa-trash {
-padding-left: 3rem;  
-text-align: right;
-
-
+  padding-left: 3rem;
+  text-align: right;
 }
 .fa-trash:hover {
-color: hsl(0, 75%, 40%);
+  color: hsl(0, 75%, 40%);
 }
 
 .fa-circle-check {
@@ -101,26 +98,111 @@ color: hsl(0, 75%, 40%);
 }
 
 .fa-circle-check:hover {
-color: rgb(24, 143, 24);
+  color: rgb(24, 143, 24);
 }
-
 
 ::placeholder {
   color: rgb(143, 144, 134);
   opacity: 3;
-  font-style:inherit
+  font-style: inherit;
 }
-.DeleteAllButton{
+.DeleteAllButton {
   margin-bottom: 15%;
 }
-
 
 .taskCount {
   color: #7a7a7a;
   font-size: 1rem;
-padding-top: 1rem;
-position:absolute;
-bottom: 0;
-left: 80px;
+  padding-top: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 80px;
 }
 
+.circ1 {
+  position: absolute;
+  display: block;
+  list-style: none;
+  background: rgba(210, 9, 9, 0.2);
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+  right: 270px;
+
+  width: 20px;
+  height: 20px;
+
+}
+.circ2 {
+  position: absolute;
+  display: block;
+  list-style: none;
+  background: rgba(210, 9, 9, 0.2);
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+  right: 500px;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+.circ3 {
+  position: absolute;
+  display: block;
+  list-style: none;
+  background: rgba(210, 9, 9, 0.2);
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+  left: 500px;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+  animation-duration: 10s;
+}
+.circ4{
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(210, 9, 9, 0.2);
+  animation: animate 15s linear infinite;
+  bottom: -150px;
+
+left: 90%;
+width: 60px;
+height: 60px;
+animation-delay: 1s;
+animation-duration: 18s;
+
+}
+.socials {
+  padding: 0.5rem 0.8rem;
+  color: #1a374d;
+  font-size: 2rem !important;
+}
+.socials:hover {
+  -webkit-transform: scale(1.2) !important;
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+
+
+
+
+@keyframes animate {
+  /* start shapes  */
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+
+  /* End shapes  */
+
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 70%;
+  }
+}

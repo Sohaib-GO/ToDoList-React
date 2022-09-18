@@ -40,6 +40,7 @@ function App() {
   };
 
   return (
+    <div>
     <div className="container">
       <div className="heading">
         <h1>To-Do List </h1>
@@ -83,7 +84,16 @@ function App() {
           You have {items.length} task{items.length === 1 ? "" : "s"}
         </div>
       </div>
+      <ul class="circles">
+			<li className="circ1"></li>
+			<li className="circ2"></li>
+			<li className="circ3"></li>
+			<li className="circ4"></li>
+		</ul>
+
     </div>
+    <a className=" fa fa-brands fa-github socials " href="https://github.com/Sohaib-GO/ToDoList-React"> </a>
+   </div>
   );
 }
 
