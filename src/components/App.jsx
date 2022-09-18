@@ -16,7 +16,7 @@ function App() {
     setItems((prevItems) => {
       return [...prevItems, inputText,];
     });
-    // to have an empty input after adding
+    // to have an empty input after submitting input
     setInputText("");
   }
 
@@ -58,6 +58,7 @@ function App() {
         
       </div>
       <div>
+
         <ul>
 
           {items.map((todoItem, index) => (
@@ -67,16 +68,20 @@ function App() {
               key={index}
               id={index}
               onChecked={deleteItem}
-              
 
             />
           ))
+          
           }
+  
         </ul>
+
         {/* Delete all tasks  */}
         <button  onClick={removeAll} className="DeleteAllButton">
               Delete All
             </button>
+            <div className="taskCount"> You have {items.length} task{ (items.length === 1 ? "" : "s")}</div>
+
       </div>
     </div>
   );
